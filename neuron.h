@@ -28,7 +28,7 @@ namespace neuronal { // neuron classes and functions
 				else(method == 2)
 					this.out = val[1] && val[2];
 			}
-     }
+     };
 }
 namespace logic { // simple logics
 	class gates {
@@ -42,6 +42,6 @@ namespace logic { // simple logics
 		int and(int bit1, int bit2) {
 			return  (bit1 && bit2);
 		}
-	}
+	};
 }
 #endif
