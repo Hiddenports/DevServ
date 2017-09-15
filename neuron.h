@@ -33,13 +33,13 @@ namespace neuronal { // neuron classes and functions
 namespace logic { // simple logics
 	class gates {
 		public:
-		int xor(int bit1, int bit2) {
+		int gates::xor(int bit1, int bit2) {
 			return (bit1 != bit2);
 		}
-		int or(int bit1, int bit2) {
+		int gates::or(int bit1, int bit2) {
 			return (bit1 || bit2);
 		}
-		int and(int bit1, int bit2) {
+		int gates::and(int bit1, int bit2) {
 			return  (bit1 && bit2);
 		}
 	};
