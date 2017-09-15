@@ -31,7 +31,7 @@ namespace neuronal { // neuron classes and functions
      }
 }
 namespace logic { // simple logics
-	class operator {
+	class gates {
 		public:
 		int xor(int bit1, int bit2) {
 			return (bit1 != bit2);
