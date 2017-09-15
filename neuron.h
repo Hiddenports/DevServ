@@ -31,14 +31,17 @@ namespace neuronal { // neuron classes and functions
      }
 }
 namespace logic { // simple logics
-     int logic::xor(int bit1, int bit2) {
-          return (bit1 != bit2);
-     }
-     int logic::or(int bit1, int bit2) {
-          return (bit1 || bit2);
-     }
-     int logic::and(int bit1, int bit2) {
-          return  (bit1 && bit2);
-     }
+	class operator {
+		public:
+		int xor(int bit1, int bit2) {
+			return (bit1 != bit2);
+		}
+		int or(int bit1, int bit2) {
+			return (bit1 || bit2);
+		}
+		int and(int bit1, int bit2) {
+			return  (bit1 && bit2);
+		}
+	}
 }
 #endif
