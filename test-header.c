@@ -43,6 +43,6 @@ int main(int argc, char *argv[]) {
 		printf("WARNING - Bad compilation. Please try to recompile the program...\n");
 		exit(3);
 	}
-	printf("Test ended successfully!");
+	printf("Test ended successfully!\n");
 	exit(0);
 }
