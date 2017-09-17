@@ -11,11 +11,9 @@ int neuron(int bit1, int bit2, int level) {
 }
 struct neuronal_cell {
 	int bit1, bit2;
-	int out;
 };
 int cell_update(struct neuronal_cell target, int level) {
-	target.out = neuron(target.bit1, target.bit2, level);
-	return target.out;
+	return neuron(target.bit1, target.bit2, level);
 }
 int cell_input(struct neuronal_cell target, int value, int index) {
 	if(index == 1) {
@@ -31,7 +29,10 @@ int cell_input(struct neuronal_cell target, int value, int index) {
 		exit(2);
 	}
 }
-int cell_output(struct neuronal_cell src) {
-	return src.out;
+struct neuronal_cell cell_get(struct neuronal_cell c1, struct neuronal_cell c2, int level) {
+	struct neuronal_cell ret;
+	ret.bit1 = cell_update(c1, level);
+	ret.bit2 = cell_update(c2, level);
+	return ret;
 }
 #endif
