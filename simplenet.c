@@ -8,14 +8,6 @@
  * cell_update(cell, level) returns output
  * cell_get(c1, c2, level) returns neuronal_cell from cell_update of c1 and c2
 */
-void sgets(char *buffer) {
-	memset(buffer, '\0', sizeof(buffer));
-	fgets(buffer, sizeof(buffer), stdin);
-}
-void err(char mesg[100]) {
-	printf("[ERROR] %s\n", mesg);
-	exit(10);
-}
 int isint(char *buffer) {
 	if((atoi(buffer) != 0) && (atoi(buffer) != 1))
      	return 1;
